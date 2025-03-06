@@ -1,74 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matthew Chu – Personal Website</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!--
-    <nav>
-        <div class="logo">MC</div>
-        <div class="nav-items">
-            <a href="/">Home</a>
-            <a href="/">About</a>
-            <a href="/">Projects</a>
-            <a href="/">Contact</a>
+  <section class="hero">
+    <div class="hero-container">
+      <div class="column-left">
+        <div class="typingHead">
+          <h1>Hi, I'm Matthew Chu.</h1>
         </div>
-    </nav>
-    -->
-
-    <section class="hero">
-        <div class="hero-container">
-            <div class="column-left">
-                <div class = "circle"></div>
-                <div class = "typingHead">
-                    <h1>Hi, I'm Matthew Chu.</h1>
-                </div>
-                <p>Welcome to my personal website!</p>
-
-                <div class="button-container">
-                    <button>About</button>
-                    <button>Projects</button>
-                    <button>Contact me!</button>
-                </div>
-            </div>
-            <div class="column right">
-                <!--
-                <img src="./pfp.jpg" alt="illustration
-                " class="hero-image">
-                -->
-            </div>
+        <p>Welcome to my personal website!</p>
+        <div class="button-container">
+          <button>About</button>
+          <button>Projects</button>
+          <button>Contact me!</button>
         </div>
-    </section>
-
-    <div class = "about">
-        <div class = 'about-container'>
-            <div class = 'about-header'>
-                <h1>About me</h1>
-            </div>
-            <p>I'm a Sophomore Informatics, Accounting, & Honors student at the University of Washington, 
-                exploring the intersections of finance, data science, and software engineering. Focused on building
-                tools that make critical information more accessible. Working towards a CPA + Cloud Architect combo.
-            </p>
-        </div>
+      </div>
+      <div class="column-right">
+        <!-- Optionally include an image here -->
+        <!-- <img src="./pfp.jpg" alt="illustration" class="hero-image"> -->
+      </div>
     </div>
+  </section>
 
-    <div class = "projects">
-        <h1>Projects</h1>
-
-        <div class = 'MiniBus'>
-            <h1>MiniBusBoard</h1>
-            <p>
-                If you use public transportation in Seattle, you’ve probably noticed that bus stop “arrival" times don't 
-                always match reality. Most public transit tools still rely on inflexible schedules instead of live GPS data.
-                Seattle planned to install hundreds of real-time arrival displays to upgrade its bus stops. Four years later, we only have 17.
-                I wanted to see if I could build my own. This is the MiniBusBoard- a $16 display that works for any bus stop in Puget Sound. 
-                Powered by an ESP32, OneBusAway, and AWS serverless architecture, it shows you real-time data so you know when your bus is 
-                actually arriving- not just when it's scheduled to. 
-            </p>
-        </div>
+  <div class="about">
+    <div class="about-container">
+      <div class="about-header">
+        <h1>About me</h1>
+      </div>
+      <p>
+        I'm a Sophomore Informatics, Accounting, & Honors student at the University of Washington, exploring the intersections of finance, data science, and software engineering. Focused on building tools that make critical information more accessible. Working towards a CPA + Cloud Enginnering combo.
+      </p>
     </div>
+  </div>
+
+  <div class="projects">
+    <h1>Projects</h1>
+    <div class="MiniBus">
+      <h1>MiniBusBoard</h1>
+      <p>
+        If you use public transportation in Seattle, you’ve probably noticed that bus stop “arrival" times don't always match reality. Most public transit tools still rely on inflexible schedules instead of live GPS data. Seattle planned to install hundreds of real-time arrival displays to upgrade its bus stops. Four years later, we only have 17.
+        I wanted to see if I could build my own. This is the MiniBusBoard—a $16 display that works for any bus stop in Puget Sound.
+        Powered by an ESP32, OneBusAway, and AWS serverless architecture, it shows you real-time data so you know when your bus is actually arriving—not just when it's scheduled to.
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
