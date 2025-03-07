@@ -5,7 +5,7 @@
 */
 
 const LWIDTH = 1; // better if integer
-const FRQ = 5
+const FRQ = 3
 
 let canv, ctx; // canvas and context
 let maxx, maxy; // canvas dimensions
@@ -59,9 +59,24 @@ function Noise1DOneShotHarm(period, min = 0, max = 1, ampl, random) {
   };
 }
 
+const heroSection = document.querySelector('.hero');
+canv = document.createElement("canvas");
+canv.style.position = "absolute";
+canv.style.top = "0";
+canv.style.left = "0";
+// canvas width/height will be set based on heroSection dimensions
+heroSection.insertBefore(canv, heroSection.firstChild);
+ctx = canv.getContext("2d");
+canv.addEventListener("click", startOver);
+startOver();
+
+
 function startOver() {
-  maxx = window.innerWidth;
-  maxy = window.innerHeight;
+  //maxx = window.innerWidth;
+  //maxy = window.innerHeight;
+
+  maxx = heroSection.clientWidth;
+  maxy = heroSection.clientHeight;
 
   canv.width = maxx;
   canv.height = maxy;
@@ -113,6 +128,8 @@ function startOver() {
 
 // --- Initialization ---
 // Create the canvas and set it as a background element
+
+/*
 canv = document.createElement("canvas");
 canv.style.position = "absolute";
 canv.style.top = "0";
@@ -123,3 +140,4 @@ ctx = canv.getContext("2d");
 
 canv.addEventListener("click", startOver);
 startOver();
+*/
